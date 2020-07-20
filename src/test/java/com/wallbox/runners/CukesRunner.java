@@ -8,11 +8,12 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
 
         plugin = {"json:target/cucumber.json",
-                "html:target/default-html-reports"},
+                "html:target/default-html-reports",
+                },
         features = "src/test/resources/features",
         glue = "com/wallbox/step_defs",
         dryRun =false,
-        tags="@api"
+        tags="@wip"
 
 )
 

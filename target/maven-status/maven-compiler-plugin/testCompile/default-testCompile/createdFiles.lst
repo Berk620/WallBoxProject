@@ -1,0 +1,12 @@
+com\wallbox\pages\SearchResultPage.class
+com\wallbox\step_defs\GetAPIStepDefs.class
+com\wallbox\utilities\Driver.class
+com\wallbox\step_defs\Hooks.class
+com\wallbox\pages\LoginPage.class
+com\wallbox\step_defs\LoginStepDefs.class
+com\wallbox\step_defs\SearchResultStepDefs.class
+com\wallbox\step_defs\SearchStepDefs.class
+com\wallbox\utilities\ConfigurationReader.class
+com\wallbox\runners\CukesRunner.class
+com\wallbox\step_defs\PostAPIStepDefs.class
+com\wallbox\pages\SearchPage.class

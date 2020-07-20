@@ -1,121 +1,170 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/GetMovie.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/Login.feature");
 formatter.feature({
-  "name": "Get Movie",
+  "name": "Users should be able to login",
   "description": "",
-  "keyword": "Feature"
+  "keyword": "Feature",
+  "tags": [
+    {
+      "name": "@wip"
+    },
+    {
+      "name": "@ui"
+    },
+    {
+      "name": "@login"
+    }
+  ]
 });
 formatter.scenario({
-  "name": "User Get a  Movie",
+  "name": "Login as a user",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@api"
+      "name": "@wip"
+    },
+    {
+      "name": "@ui"
+    },
+    {
+      "name": "@login"
     }
   ]
 });
+formatter.before({
+  "status": "passed"
+});
 formatter.step({
-  "name": "user connects to  www.themoviedb.org url",
+  "name": "the user is on the login page",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "GetAPIStepDefs.user_connects_to_www_themoviedb_org_url()"
+  "location": "LoginStepDefs.the_user_is_on_the_login_page()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user gets response",
+  "name": "the user enter the valid credentials",
   "keyword": "When "
 });
 formatter.match({
-  "location": "GetAPIStepDefs.user_gets_response()"
+  "location": "LoginStepDefs.the_user_enter_the_valid_credentials()"
 });
 formatter.result({
   "status": "passed"
 });
-formatter.step({
-  "name": "verify that the statusCode is 200",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "GetAPIStepDefs.verify_the_statusCode_is(Object)"
-});
-formatter.result({
+formatter.after({
   "status": "passed"
 });
-formatter.step({
-  "name": "verify that the contentType is \"application/json;charset\u003dutf-8\"",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "GetAPIStepDefs.verify_the_contentType_is(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "verify that ten pages has 200 top-rated movies",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "GetAPIStepDefs.verify_that_ten_pages_has_top_rated_movies(Object)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.uri("file:src/test/resources/features/PostMovieRate.feature");
+formatter.uri("file:src/test/resources/features/Search.feature");
 formatter.feature({
-  "name": "Post a Rating",
+  "name": "Find any  film from webpage",
   "description": "",
   "keyword": "Feature"
 });
 formatter.scenario({
-  "name": "Movie rating for specific movie",
+  "name": "Searching  any film",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@api"
+      "name": "@wip"
+    },
+    {
+      "name": "@ui"
     }
   ]
 });
+formatter.before({
+  "status": "passed"
+});
 formatter.step({
-  "name": "user connects to  Post url",
+  "name": "the user is on the main page",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "PostAPIStepDefs.user_connects_to_https_api_themoviedb_org_movie_rating_url()"
+  "location": "SearchStepDefs.the_user_is_on_the_main_page()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user posts a rating",
-  "rows": [
-    {
-      "cells": [
-        "value",
-        "8"
-      ]
-    }
-  ],
-  "keyword": "When "
-});
-formatter.match({
-  "location": "PostAPIStepDefs.user_posts_a_rating(String,Integer\u003e)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "verify that the status_Code is 201",
+  "name": "the user enter film name \"Tom hanks\"",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "PostAPIStepDefs.verify_that_the_status_Code_is(Object)"
+  "location": "SearchStepDefs.the_user_enter_film_name(String)"
 });
 formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.uri("file:src/test/resources/features/SearchResult.feature");
+formatter.feature({
+  "name": "movie search results",
+  "description": "",
+  "keyword": "Feature"
+});
+formatter.scenario({
+  "name": "search results of movies",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@wip"
+    },
+    {
+      "name": "@ui"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user is on the main page",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "SearchStepDefs.the_user_is_on_the_main_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user enter film name \"Tom hanks\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "SearchStepDefs.the_user_enter_film_name(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "go to movies and click on",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "SearchResultStepDefs.go_to_movies_and_click_on()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "verify number of movies",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "SearchResultStepDefs.verify_number_of_movies()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
   "status": "passed"
 });
 });

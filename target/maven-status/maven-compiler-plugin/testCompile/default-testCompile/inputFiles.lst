@@ -1,5 +1,12 @@
 C:\Users\Administrador\Desktop\WallBoxProject\src\test\java\com\wallbox\utilities\ConfigurationReader.java
-C:\Users\Administrador\Desktop\WallBoxProject\src\test\java\com\wallbox\pages\searchPage.java
+C:\Users\Administrador\Desktop\WallBoxProject\src\test\java\com\wallbox\pages\SearchPage.java
+C:\Users\Administrador\Desktop\WallBoxProject\src\test\java\com\wallbox\pages\LoginPage.java
+C:\Users\Administrador\Desktop\WallBoxProject\src\test\java\com\wallbox\step_defs\LoginStepDefs.java
+C:\Users\Administrador\Desktop\WallBoxProject\src\test\java\com\wallbox\step_defs\SearchResultStepDefs.java
+C:\Users\Administrador\Desktop\WallBoxProject\src\test\java\com\wallbox\step_defs\Hooks.java
 C:\Users\Administrador\Desktop\WallBoxProject\src\test\java\com\wallbox\runners\CukesRunner.java
-C:\Users\Administrador\Desktop\WallBoxProject\src\test\java\com\wallbox\step_defs\searchStepDefs.java
+C:\Users\Administrador\Desktop\WallBoxProject\src\test\java\com\wallbox\step_defs\PostAPIStepDefs.java
+C:\Users\Administrador\Desktop\WallBoxProject\src\test\java\com\wallbox\pages\SearchResultPage.java
+C:\Users\Administrador\Desktop\WallBoxProject\src\test\java\com\wallbox\step_defs\SearchStepDefs.java
+C:\Users\Administrador\Desktop\WallBoxProject\src\test\java\com\wallbox\step_defs\GetAPIStepDefs.java
 C:\Users\Administrador\Desktop\WallBoxProject\src\test\java\com\wallbox\utilities\Driver.java

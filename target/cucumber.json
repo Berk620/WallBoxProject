@@ -1,184 +1,294 @@
 [
   {
-    "line": 1,
+    "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-07-20T19:29:52.237Z",
-        "line": 3,
-        "name": "User Get a  Movie",
+        "start_timestamp": "2020-07-20T19:54:59.287Z",
+        "before": [
+          {
+            "result": {
+              "duration": 8227001500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Login as a user",
         "description": "",
-        "id": "get-movie;user-get-a--movie",
+        "id": "users-should-be-able-to-login;login-as-a-user",
+        "after": [
+          {
+            "result": {
+              "duration": 2830629500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 1107954100,
+              "duration": 2153681800,
               "status": "passed"
             },
-            "line": 4,
-            "name": "user connects to  www.themoviedb.org url",
+            "line": 5,
+            "name": "the user is on the login page",
             "match": {
-              "location": "GetAPIStepDefs.user_connects_to_www_themoviedb_org_url()"
+              "location": "LoginStepDefs.the_user_is_on_the_login_page()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 6534326700,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "user gets response",
-            "match": {
-              "location": "GetAPIStepDefs.user_gets_response()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 3643300,
+              "duration": 2607100000,
               "status": "passed"
             },
             "line": 6,
-            "name": "verify that the statusCode is 200",
+            "name": "the user enter the valid credentials",
             "match": {
-              "arguments": [
-                {
-                  "val": "200",
-                  "offset": 30
-                }
-              ],
-              "location": "GetAPIStepDefs.verify_the_statusCode_is(Object)"
+              "location": "LoginStepDefs.the_user_enter_the_valid_credentials()"
             },
-            "keyword": "Then "
+            "keyword": "When "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          },
+          {
+            "name": "@ui"
+          },
+          {
+            "name": "@login"
+          }
+        ]
+      }
+    ],
+    "name": "Users should be able to login",
+    "description": "",
+    "id": "users-should-be-able-to-login",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Login.feature",
+    "tags": [
+      {
+        "name": "@wip",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@ui",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 6
+        }
+      },
+      {
+        "name": "@login",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 10
+        }
+      }
+    ]
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-07-20T19:55:15.167Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5625104800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Searching  any film",
+        "description": "",
+        "id": "find-any--film-from-webpage;searching--any-film",
+        "after": [
+          {
+            "result": {
+              "duration": 955573400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3844700900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user is on the main page",
+            "match": {
+              "location": "SearchStepDefs.the_user_is_on_the_main_page()"
+            },
+            "keyword": "Given "
           },
           {
             "result": {
-              "duration": 995900,
+              "duration": 1195945700,
               "status": "passed"
             },
-            "line": 7,
-            "name": "verify that the contentType is \"application/json;charset\u003dutf-8\"",
+            "line": 6,
+            "name": "the user enter film name \"Tom hanks\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"application/json;charset\u003dutf-8\"",
-                  "offset": 31
+                  "val": "\"Tom hanks\"",
+                  "offset": 25
                 }
               ],
-              "location": "GetAPIStepDefs.verify_the_contentType_is(String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 685400,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "verify that ten pages has 200 top-rated movies",
-            "match": {
-              "arguments": [
-                {
-                  "val": "200",
-                  "offset": 26
-                }
-              ],
-              "location": "GetAPIStepDefs.verify_that_ten_pages_has_top_rated_movies(Object)"
+              "location": "SearchStepDefs.the_user_enter_film_name(String)"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@api"
+            "name": "@wip"
+          },
+          {
+            "name": "@ui"
           }
         ]
       }
     ],
-    "name": "Get Movie",
+    "name": "Find any  film from webpage",
     "description": "",
-    "id": "get-movie",
+    "id": "find-any--film-from-webpage",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/GetMovie.feature",
+    "uri": "file:src/test/resources/features/Search.feature",
     "tags": []
   },
   {
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-07-20T19:29:59.975Z",
-        "line": 3,
-        "name": "Movie rating for specific movie",
+        "start_timestamp": "2020-07-20T19:55:26.795Z",
+        "before": [
+          {
+            "result": {
+              "duration": 6526096300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "search results of movies",
         "description": "",
-        "id": "post-a-rating;movie-rating-for-specific-movie",
+        "id": "movie-search-results;search-results-of-movies",
+        "after": [
+          {
+            "result": {
+              "duration": 1008732200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 649000,
+              "duration": 3554581600,
               "status": "passed"
             },
             "line": 5,
-            "name": "user connects to  Post url",
+            "name": "the user is on the main page",
             "match": {
-              "location": "PostAPIStepDefs.user_connects_to_https_api_themoviedb_org_movie_rating_url()"
+              "location": "SearchStepDefs.the_user_is_on_the_main_page()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 637249700,
+              "duration": 1260993700,
               "status": "passed"
             },
             "line": 6,
-            "name": "user posts a rating",
-            "match": {
-              "location": "PostAPIStepDefs.user_posts_a_rating(String,Integer\u003e)"
-            },
-            "rows": [
-              {
-                "cells": [
-                  "value",
-                  "8"
-                ]
-              }
-            ],
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 609800,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "verify that the status_Code is 201",
+            "name": "the user enter film name \"Tom hanks\"",
             "match": {
               "arguments": [
                 {
-                  "val": "201",
-                  "offset": 31
+                  "val": "\"Tom hanks\"",
+                  "offset": 25
                 }
               ],
-              "location": "PostAPIStepDefs.verify_that_the_status_Code_is(Object)"
+              "location": "SearchStepDefs.the_user_enter_film_name(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3090446700,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "go to movies and click on",
+            "match": {
+              "location": "SearchResultStepDefs.go_to_movies_and_click_on()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 34965600,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "verify number of movies",
+            "match": {
+              "location": "SearchResultStepDefs.verify_number_of_movies()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@api"
+            "name": "@wip"
+          },
+          {
+            "name": "@ui"
           }
         ]
       }
     ],
-    "name": "Post a Rating",
+    "name": "movie search results",
     "description": "",
-    "id": "post-a-rating",
+    "id": "movie-search-results",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/PostMovieRate.feature",
+    "uri": "file:src/test/resources/features/SearchResult.feature",
     "tags": []
   }
 ]

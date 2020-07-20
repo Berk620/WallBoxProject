@@ -1,7 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e16b9484-7463-49ec-aa7b-3bbbffbf787a" name="Default Changelist" comment="" />
+    <list default="true" id="e16b9484-7463-49ec-aa7b-3bbbffbf787a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/wallbox/runners/CukesRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/wallbox/runners/CukesRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/default-html-reports/formatter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/default-html-reports/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/default-html-reports/jquery-3.4.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/default-html-reports/report.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/default-html-reports/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.wallbox.runners.CukesRunner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.wallbox.runners.CukesRunner.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/wallbox/pages/LoginPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/wallbox/pages/SearchPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/wallbox/pages/SearchResultPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/wallbox/runners/CukesRunner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/wallbox/step_defs/GetAPIStepDefs.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/wallbox/step_defs/Hooks.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/wallbox/step_defs/LoginStepDefs.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/wallbox/step_defs/PostAPIStepDefs.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/wallbox/step_defs/SearchResultStepDefs.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/wallbox/step_defs/SearchStepDefs.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/wallbox/utilities/ConfigurationReader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/wallbox/utilities/Driver.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/GetMovie.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/Login.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/PostMovieRate.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/Search.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/SearchResult.feature" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,13 +46,18 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1epssuVu1JEfzLvjySthdiuACEd" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
   </component>
   <component name="RunManager">
     <configuration name="CukesRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
@@ -74,22 +111,22 @@
       <screen x="0" y="0" width="1280" height="984" />
     </state>
     <state x="92" y="92" width="1096" height="800" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1280.984@0.0.1280.984" timestamp="1595033028941" />
-    <state width="1237" height="44" key="GridCell.Tab.0.bottom" timestamp="1595273358500">
+    <state width="1237" height="73" key="GridCell.Tab.0.bottom" timestamp="1595274885890">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1237" height="44" key="GridCell.Tab.0.bottom/0.0.1280.984@0.0.1280.984" timestamp="1595273358500" />
-    <state width="1237" height="44" key="GridCell.Tab.0.center" timestamp="1595273358500">
+    <state width="1237" height="73" key="GridCell.Tab.0.bottom/0.0.1280.984@0.0.1280.984" timestamp="1595274885890" />
+    <state width="1237" height="73" key="GridCell.Tab.0.center" timestamp="1595274885889">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1237" height="44" key="GridCell.Tab.0.center/0.0.1280.984@0.0.1280.984" timestamp="1595273358500" />
-    <state width="1237" height="44" key="GridCell.Tab.0.left" timestamp="1595273358500">
+    <state width="1237" height="73" key="GridCell.Tab.0.center/0.0.1280.984@0.0.1280.984" timestamp="1595274885889" />
+    <state width="1237" height="73" key="GridCell.Tab.0.left" timestamp="1595274885889">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1237" height="44" key="GridCell.Tab.0.left/0.0.1280.984@0.0.1280.984" timestamp="1595273358500" />
-    <state width="1237" height="44" key="GridCell.Tab.0.right" timestamp="1595273358500">
+    <state width="1237" height="73" key="GridCell.Tab.0.left/0.0.1280.984@0.0.1280.984" timestamp="1595274885889" />
+    <state width="1237" height="73" key="GridCell.Tab.0.right" timestamp="1595274885889">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1237" height="44" key="GridCell.Tab.0.right/0.0.1280.984@0.0.1280.984" timestamp="1595273358500" />
+    <state width="1237" height="73" key="GridCell.Tab.0.right/0.0.1280.984@0.0.1280.984" timestamp="1595274885889" />
     <state x="348" y="321" key="com.intellij.ide.util.TipDialog" timestamp="1595171302756">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
