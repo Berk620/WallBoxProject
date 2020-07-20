@@ -1,0 +1,184 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-07-20T19:29:52.237Z",
+        "line": 3,
+        "name": "User Get a  Movie",
+        "description": "",
+        "id": "get-movie;user-get-a--movie",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1107954100,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user connects to  www.themoviedb.org url",
+            "match": {
+              "location": "GetAPIStepDefs.user_connects_to_www_themoviedb_org_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6534326700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user gets response",
+            "match": {
+              "location": "GetAPIStepDefs.user_gets_response()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3643300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "verify that the statusCode is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 30
+                }
+              ],
+              "location": "GetAPIStepDefs.verify_the_statusCode_is(Object)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 995900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "verify that the contentType is \"application/json;charset\u003dutf-8\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"application/json;charset\u003dutf-8\"",
+                  "offset": 31
+                }
+              ],
+              "location": "GetAPIStepDefs.verify_the_contentType_is(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 685400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "verify that ten pages has 200 top-rated movies",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 26
+                }
+              ],
+              "location": "GetAPIStepDefs.verify_that_ten_pages_has_top_rated_movies(Object)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@api"
+          }
+        ]
+      }
+    ],
+    "name": "Get Movie",
+    "description": "",
+    "id": "get-movie",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/GetMovie.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-07-20T19:29:59.975Z",
+        "line": 3,
+        "name": "Movie rating for specific movie",
+        "description": "",
+        "id": "post-a-rating;movie-rating-for-specific-movie",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 649000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user connects to  Post url",
+            "match": {
+              "location": "PostAPIStepDefs.user_connects_to_https_api_themoviedb_org_movie_rating_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 637249700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user posts a rating",
+            "match": {
+              "location": "PostAPIStepDefs.user_posts_a_rating(String,Integer\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "value",
+                  "8"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 609800,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "verify that the status_Code is 201",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 31
+                }
+              ],
+              "location": "PostAPIStepDefs.verify_that_the_status_Code_is(Object)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@api"
+          }
+        ]
+      }
+    ],
+    "name": "Post a Rating",
+    "description": "",
+    "id": "post-a-rating",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/PostMovieRate.feature",
+    "tags": []
+  }
+]
